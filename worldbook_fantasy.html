@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorldBook</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #0d0d1a, #1a0f33);
+      color: #f0e6ff;
+      background-attachment: fixed;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(20, 10, 40, 0.9);
+      box-shadow: 0 0 20px #7a42f4;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #c9a0ff;
+      text-shadow: 0 0 10px #8a2be2;
+      margin: 0;
+    }
+
+    .stories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .story-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(200, 150, 255, 0.4);
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 0 15px rgba(150, 100, 255, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .story-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(200, 150, 255, 0.6);
+    }
+
+    .story-title {
+      font-size: 1.5rem;
+      color: #e2b6ff;
+      margin-bottom: 0.5rem;
+    }
+
+    .story-desc {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #ddd;
+      margin-bottom: 1rem;
+    }
+
+    .read-btn {
+      background: #7a42f4;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .read-btn:hover {
+      background: #9b5dff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(20, 10, 40, 0.9);
+      border-top: 1px solid rgba(200, 150, 255, 0.3);
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WorldBook ✨</h1>
+    <p>Where stories become magic</p>
+  </header>
+
+  <main class="stories">
+    <div class="story-card">
+      <h2 class="story-title">Blood-Stained Glass Slipper</h2>
+      <p class="story-desc">A twisted retelling of a classic fairytale, where a cursed slipper leads a kingdom into chaos...</p>
+      <button class="read-btn">Read More</button>
+    </div>
+
+    <div class="story-card">
+      <h2 class="story-title">The Moon Eater</h2>
+      <p class="story-desc">When the Bakunawa awakens once more, only a boy reborn across centuries can save the last moon...</p>
+      <button class="read-btn">Read More</button>
+    </div>
+
+    <div class="story-card">
+      <h2 class="story-title">Daughter of Hel</h2>
+      <p class="story-desc">Maine, child of the underworld goddess, struggles between love and destiny as the realms tremble...</p>
+      <button class="read-btn">Read More</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 WorldBook | All rights reserved</p>
+  </footer>
+</body>
+</html>
